@@ -5,8 +5,6 @@ import './data.css'
 export default function StudyData() {
 
     const [isActive, setActive] = useState(false);
-    const [fullMinutesStudied, setFullMinutesStudied] = useState(localStorage.getItem('minutesStudied') ?? 0);
-
     return (
         isActive ? (
             <div className='statusDiv'>
@@ -18,11 +16,6 @@ export default function StudyData() {
 
                 <p className='titleMinutes'>Time of pomodoro</p>
                 <span className='minutesStudied'>{Math.floor(localStorage.getItem('minutesStudied') / 60)} Minutes</span>
-
-                {/* <p>Esta parte está em desenvolvimento, espero trazer coisas interessantes para vocês!</p>
-                <Hammer size={60}/> */}
-                
-                
             </div>
         ) : 
         (
