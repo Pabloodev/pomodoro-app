@@ -38,3 +38,11 @@
   right: 5%;
   top: 3%;
 }
+
+.titleMinutes {
+  font-size: 22px;
+}
+
+.minutesStudied {
+  font-size: 30px;
+}

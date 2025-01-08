@@ -15,10 +15,20 @@ export default function Timer() {
   function timer() {
     if (isRunning) {
       clearInterval(intervalRef.current);
+  
       intervalRef.current = setInterval(() => {
-        setTime((prevTime) => prevTime - 1);
+        setTime((prevTime) => {
+          // Atualiza o tempo no contexto
+          const newTime = prevTime - 1;
+  
+          // Atualiza o localStorage com o tempo estudado acumulado
+          const minutesStudied = parseInt(localStorage.getItem('minutesStudied')) || 0;
+          localStorage.setItem('minutesStudied', minutesStudied + 1);
+  
+          return newTime;
+        });
       }, 1000);
-
+  
       if (time === 0) {
         clearInterval(intervalRef.current);
       }
