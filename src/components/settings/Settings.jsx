@@ -1,6 +1,7 @@
 import { Bolt, OctagonX } from "lucide-react";
 import { useState, useContext } from "react";
-import { TimerContext } from "./Pomodoro";
+import { TimerContext } from "../Pomodoro";
+import './Settings.css'
 
 export default function Settings() {
   const [isActive, setActive] = useState(false);
@@ -23,7 +24,7 @@ export default function Settings() {
           </button>
 
           <div className="choosePomodoro">
-            <span>Tempo de pomodoro: </span>
+            <span>Pomodoro time: </span>
 
             <div className="pomodoroBtns">
               <button onClick={() => handleClick(1800)} className="pomodoroBtn">30</button>

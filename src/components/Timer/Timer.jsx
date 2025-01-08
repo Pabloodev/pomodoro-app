@@ -1,11 +1,11 @@
 import { Play, Pause, Square } from "lucide-react";
 import { useState, useRef, useContext } from "react";
-import { TimerContext } from "./Pomodoro";
+import { TimerContext } from "../Pomodoro";
+import './Timer.css'
 
 export default function Timer() {
 
   const intervalRef = useRef(null);
-
   const [time, setTime] = useContext(TimerContext);
   const [isRunning, setRunning] = useState(false);
   
@@ -33,8 +33,7 @@ export default function Timer() {
   const handlePause = () => setRunning(false);
   const handleReset = () => {
     setRunning(false);
-    setTime(localStorage.getItem('time'))
-  
+    setTime(localStorage.getItem('time') ?? 1800)
   };
 
   return (

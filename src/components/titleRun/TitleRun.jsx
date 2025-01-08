@@ -1,9 +1,10 @@
 import { Pencil, SquareCheck } from "lucide-react";
+import './TitleRun.css'
 import { useState } from "react";
 
 export default function TitleRun() {
-
-  const [title, setTitle] = useState(localStorage.getItem('title') ?? 'Programador 2024'); // If the first value was undefined, the 
+  
+  const [title, setTitle] = useState(localStorage.getItem('title') ?? 'dev 2024');
   const [editMode, setMode] = useState(false);
 
   const handleChange = (e) => {

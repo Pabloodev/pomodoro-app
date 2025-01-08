@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { ArrowUp, OctagonX, Hammer } from 'lucide-react';
+import { ArrowUp, OctagonX, Hammer, Omega } from 'lucide-react';
+import './data.css'
 
 export default function StudyData() {
 

@@ -1,15 +1,16 @@
 // Components
-import TitleRun from "./TitleRun";
-import Timer from "./Timer";
-import Settings from "./Settings";
-import StudyData from "./StudyData";
+import TitleRun from "./titleRun/TitleRun";
+import Timer from "./Timer/Timer";
+import Settings from "./settings/Settings";
+import StudyData from "./data/data";
 
+// General
 import { createContext, useState } from "react";
 
 export const TimerContext = createContext();
 
 export default function Pomodoro() {
-  const [time, setTime] = useState(localStorage.getItem('time') ?? 1800);
+  const [time, setTime] = useState(localStorage.getItem("time") ?? 1800);
 
   return (
     <div className="pomodoro-container">

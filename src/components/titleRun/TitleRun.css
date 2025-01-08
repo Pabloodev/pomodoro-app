@@ -1,0 +1,12 @@
+.titleDiv {
+  gap: 10px;
+}
+
+.input-changer {
+  outline: none;
+  border-bottom: 2px solid rgb(255, 255, 255, 0.2);
+}
+
+.input-changer, .titlePage {
+  font-size: 25px;
+}
