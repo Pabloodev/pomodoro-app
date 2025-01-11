@@ -3,7 +3,7 @@
   bottom: 5%;
   right: 5%;
   color: white;
-  background-color: #0D1117;
+  background-color: rgb(37, 30, 30);
   border: 1px solid rgb(255, 255, 255, 0.2);
   font-size: 26px;
   border-radius: 8px;
@@ -13,7 +13,7 @@
 
 .dataButton:hover {
   transform: none;
-  background-color: #11171f;
+  background-color: rgb(41, 35, 35);
 }
 
 .statusDiv {
@@ -24,7 +24,7 @@
   position: fixed;
   right: 2%;
   bottom: 3%;
-  background-color: #0D1117;
+  background-color: rgb(37, 30, 30);
   padding: 25px;
   text-align: center;
   width: 400px;
@@ -45,4 +45,10 @@
 
 .minutesStudied {
   font-size: 30px;
+}
+
+.footerDataContainer {
+  position: fixed;
+  bottom: 5%;
+  width: 400px;
 }

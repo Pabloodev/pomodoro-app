@@ -14,7 +14,8 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #0D1117;
+    background-color: rgb(37, 30, 30);
+    /* background-color: #0D1117; */
 }
 
 button {

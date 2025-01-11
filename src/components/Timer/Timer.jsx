@@ -31,6 +31,10 @@ export default function Timer() {
   
       if (time === 0) {
         clearInterval(intervalRef.current);
+        const audio = new Audio('./notificationEnds.mp3');
+        audio.currentTime = 5;
+        audio.volume = 0.5;
+        audio.play();
       }
     } else {
       clearInterval(intervalRef.current);
