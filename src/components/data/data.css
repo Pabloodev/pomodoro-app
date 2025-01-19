@@ -3,7 +3,7 @@
   bottom: 5%;
   right: 5%;
   color: white;
-  background-color: rgb(37, 30, 30);
+  background-color: rgb(16, 15, 18);
   border: 1px solid rgb(255, 255, 255, 0.2);
   font-size: 26px;
   border-radius: 8px;
@@ -13,7 +13,7 @@
 
 .dataButton:hover {
   transform: none;
-  background-color: rgb(41, 35, 35);
+  background-color: rgb(25, 24, 28);
 }
 
 .statusDiv {
@@ -24,7 +24,7 @@
   position: fixed;
   right: 2%;
   bottom: 3%;
-  background-color: rgb(37, 30, 30);
+  background-color: rgb(16, 15, 18);
   padding: 25px;
   text-align: center;
   width: 400px;
